@@ -1,0 +1,431 @@
+[
+  {
+    "hook": {
+      "name": "resolve"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo",
+      "request": "./a"
+    }
+  },
+  {
+    "hook": {
+      "name": "parsedResolve"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo",
+      "request": "./a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false
+    }
+  },
+  {
+    "hook": {
+      "name": "describedResolve"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo",
+      "request": "./a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo"
+    }
+  },
+  {
+    "hook": {
+      "name": "rawResolve"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo",
+      "request": "./a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo"
+    }
+  },
+  {
+    "hook": {
+      "name": "normalResolve"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo",
+      "request": "./a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo"
+    }
+  },
+  {
+    "hook": {
+      "name": "relative"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "demo/package-demo/a"
+    }
+  },
+  {
+    "hook": {
+      "name": "describedRelative"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a"
+    }
+  },
+  {
+    "hook": {
+      "name": "rawFile"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a"
+    }
+  },
+  {
+    "hook": {
+      "name": "file"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a"
+    }
+  },
+  {
+    "hook": {
+      "name": "finalFile"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a"
+    }
+  },
+  {
+    "hook": {
+      "name": "file"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a.json",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a.json"
+    }
+  },
+  {
+    "hook": {
+      "name": "finalFile"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a.json",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a.json"
+    }
+  },
+  {
+    "hook": {
+      "name": "file"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a.js"
+    }
+  },
+  {
+    "hook": {
+      "name": "finalFile"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a.js"
+    }
+  },
+  {
+    "hook": {
+      "name": "file"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a.ts",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a.ts"
+    }
+  },
+  {
+    "hook": {
+      "name": "finalFile"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a.ts",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a.ts"
+    }
+  },
+  {
+    "hook": {
+      "name": "directory"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a"
+    }
+  },
+  {
+    "hook": {
+      "name": "undescribedExistingDirectory"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./demo/package-demo/a"
+    }
+  },
+  {
+    "hook": {
+      "name": "existingDirectory"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "."
+    }
+  },
+  {
+    "hook": {
+      "name": "resolveInExistingDirectory"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a",
+      "request": "./index.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "."
+    }
+  },
+  {
+    "hook": {
+      "name": "relative"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a/index.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "index.js"
+    }
+  },
+  {
+    "hook": {
+      "name": "describedRelative"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a/index.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./index.js"
+    }
+  },
+  {
+    "hook": {
+      "name": "rawFile"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a/index.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./index.js"
+    }
+  },
+  {
+    "hook": {
+      "name": "file"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a/index.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./index.js"
+    }
+  },
+  {
+    "hook": {
+      "name": "finalFile"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a/index.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./index.js"
+    }
+  },
+  {
+    "hook": {
+      "name": "existingFile"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a/index.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./index.js"
+    }
+  },
+  {
+    "hook": {
+      "name": "resolved"
+    },
+    "request": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/package-demo/a/index.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./index.js"
+    }
+  }
+]

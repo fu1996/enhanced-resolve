@@ -1,0 +1,253 @@
+[
+  {
+    "source": "resolve",
+    "requestOptions": {
+      "fullySpecified": false
+    },
+    "target": "parsed-resolve"
+  },
+  {
+    "source": "internal-resolve",
+    "requestOptions": {
+      "fullySpecified": false
+    },
+    "target": "parsed-resolve"
+  },
+  {
+    "source": "parsed-resolve",
+    "filenames": [
+      "package.json"
+    ],
+    "pathIsFile": false,
+    "target": "described-resolve"
+  },
+  {
+    "source": "after-parsed-resolve",
+    "target": "described-resolve"
+  },
+  {
+    "source": "described-resolve",
+    "target": "raw-resolve"
+  },
+  {
+    "source": "raw-resolve",
+    "target": "normal-resolve"
+  },
+  {
+    "source": "after-normal-resolve",
+    "test": {
+      "module": true
+    },
+    "message": "resolve as module",
+    "allowAlternatives": false,
+    "target": "raw-module"
+  },
+  {
+    "source": "after-normal-resolve",
+    "test": {
+      "internal": true
+    },
+    "message": "resolve as internal import",
+    "allowAlternatives": false,
+    "target": "internal"
+  },
+  {
+    "source": "after-normal-resolve",
+    "target": "relative"
+  },
+  {
+    "source": "internal",
+    "targetFile": "relative",
+    "targetPackage": "internal-resolve",
+    "conditionNames": {},
+    "fieldName": "imports",
+    "fieldProcessorCache": {}
+  },
+  {
+    "source": "raw-module",
+    "target": "resolve-as-module",
+    "fieldName": "exports"
+  },
+  {
+    "source": "raw-module",
+    "directories": [
+      "node_modules"
+    ],
+    "target": "module"
+  },
+  {
+    "source": "module",
+    "target": "resolve-as-module"
+  },
+  {
+    "source": "resolve-as-module",
+    "test": {
+      "directory": false,
+      "request": "."
+    },
+    "message": "single file module",
+    "allowAlternatives": true,
+    "target": "undescribed-raw-file"
+  },
+  {
+    "source": "resolve-as-module",
+    "target": "undescribed-resolve-in-package"
+  },
+  {
+    "source": "undescribed-resolve-in-package",
+    "filenames": [
+      "package.json"
+    ],
+    "pathIsFile": false,
+    "target": "resolve-in-package"
+  },
+  {
+    "source": "after-undescribed-resolve-in-package",
+    "target": "resolve-in-package"
+  },
+  {
+    "source": "resolve-in-package",
+    "target": "relative",
+    "conditionNames": {},
+    "fieldName": "exports",
+    "fieldProcessorCache": {}
+  },
+  {
+    "source": "resolve-in-package",
+    "target": "resolve-in-existing-directory"
+  },
+  {
+    "source": "resolve-in-existing-directory",
+    "target": "relative"
+  },
+  {
+    "source": "relative",
+    "filenames": [
+      "package.json"
+    ],
+    "pathIsFile": true,
+    "target": "described-relative"
+  },
+  {
+    "source": "after-relative",
+    "target": "described-relative"
+  },
+  {
+    "source": "described-relative",
+    "test": {
+      "directory": false
+    },
+    "message": null,
+    "allowAlternatives": true,
+    "target": "raw-file"
+  },
+  {
+    "source": "described-relative",
+    "test": {
+      "fullySpecified": false
+    },
+    "message": "as directory",
+    "allowAlternatives": true,
+    "target": "directory"
+  },
+  {
+    "source": "directory",
+    "target": "undescribed-existing-directory"
+  },
+  {
+    "source": "undescribed-existing-directory",
+    "filenames": [
+      "package.json"
+    ],
+    "pathIsFile": false,
+    "target": "existing-directory"
+  },
+  {
+    "source": "undescribed-existing-directory",
+    "filename": "index",
+    "target": "undescribed-raw-file"
+  },
+  {
+    "source": "existing-directory",
+    "options": {
+      "name": [
+        "main"
+      ],
+      "forceRelative": true
+    },
+    "target": "resolve-in-existing-directory"
+  },
+  {
+    "source": "existing-directory",
+    "filename": "index",
+    "target": "undescribed-raw-file"
+  },
+  {
+    "source": "undescribed-raw-file",
+    "filenames": [
+      "package.json"
+    ],
+    "pathIsFile": true,
+    "target": "raw-file"
+  },
+  {
+    "source": "after-undescribed-raw-file",
+    "target": "raw-file"
+  },
+  {
+    "source": "raw-file",
+    "test": {
+      "fullySpecified": true
+    },
+    "message": null,
+    "allowAlternatives": false,
+    "target": "file"
+  },
+  {
+    "source": "raw-file",
+    "message": "no extension",
+    "target": "file"
+  },
+  {
+    "source": "raw-file",
+    "appending": ".json",
+    "target": "file"
+  },
+  {
+    "source": "raw-file",
+    "appending": ".ts",
+    "target": "file"
+  },
+  {
+    "source": "raw-file",
+    "appending": ".js",
+    "target": "file"
+  },
+  {
+    "source": "file",
+    "target": "final-file"
+  },
+  {
+    "source": "final-file",
+    "target": "existing-file"
+  },
+  {
+    "source": "existing-file",
+    "target": "existing-file"
+  },
+  {
+    "source": "existing-file",
+    "target": "resolved"
+  },
+  {
+    "source": {
+      "_args": [
+        "request",
+        "resolveContext"
+      ],
+      "name": "resolved",
+      "taps": [],
+      "interceptors": []
+    }
+  }
+]
