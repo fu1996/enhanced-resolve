@@ -1,252 +1,298 @@
 [
   {
-    "source": "resolve",
+    "pluginName": "ParsePlugin",
     "requestOptions": {
       "fullySpecified": false
     },
-    "target": "parsed-resolve"
+    "hook": "resolve",
+    "nextHook": "parsed-resolve"
   },
   {
-    "source": "internal-resolve",
+    "pluginName": "ParsePlugin",
     "requestOptions": {
       "fullySpecified": false
     },
-    "target": "parsed-resolve"
+    "hook": "internal-resolve",
+    "nextHook": "parsed-resolve"
   },
   {
-    "source": "parsed-resolve",
+    "pluginName": "DescriptionFilePlugin",
     "filenames": [
       "package.json"
     ],
     "pathIsFile": false,
-    "target": "described-resolve"
+    "hook": "parsed-resolve",
+    "nextHook": "described-resolve"
   },
   {
-    "source": "after-parsed-resolve",
-    "target": "described-resolve"
+    "pluginName": "NextPlugin",
+    "hook": "after-parsed-resolve",
+    "nextHook": "described-resolve"
   },
   {
-    "source": "described-resolve",
-    "target": "raw-resolve"
+    "pluginName": "NextPlugin",
+    "hook": "described-resolve",
+    "nextHook": "raw-resolve"
   },
   {
-    "source": "raw-resolve",
-    "target": "normal-resolve"
+    "pluginName": "NextPlugin",
+    "hook": "raw-resolve",
+    "nextHook": "normal-resolve"
   },
   {
-    "source": "after-normal-resolve",
+    "pluginName": "ConditionalPlugin",
     "test": {
       "module": true
     },
     "message": "resolve as module",
     "allowAlternatives": false,
-    "target": "raw-module"
+    "hook": "after-normal-resolve",
+    "nextHook": "raw-module"
   },
   {
-    "source": "after-normal-resolve",
+    "pluginName": "ConditionalPlugin",
     "test": {
       "internal": true
     },
     "message": "resolve as internal import",
     "allowAlternatives": false,
-    "target": "internal"
+    "hook": "after-normal-resolve",
+    "nextHook": "internal"
   },
   {
-    "source": "after-normal-resolve",
-    "target": "relative"
+    "pluginName": "JoinRequestPlugin",
+    "hook": "after-normal-resolve",
+    "nextHook": "relative"
   },
   {
-    "source": "internal",
+    "pluginName": "ImportsFieldPlugin",
     "targetFile": "relative",
     "targetPackage": "internal-resolve",
     "conditionNames": {},
     "fieldName": "imports",
-    "fieldProcessorCache": {}
+    "fieldProcessorCache": {},
+    "hook": "internal"
   },
   {
-    "source": "raw-module",
-    "target": "resolve-as-module",
-    "fieldName": "exports"
+    "pluginName": "SelfReferencePlugin",
+    "fieldName": "exports",
+    "hook": "raw-module",
+    "nextHook": "resolve-as-module"
   },
   {
-    "source": "raw-module",
+    "pluginName": "ModulesInHierarchicalDirectoriesPlugin",
     "directories": [
       "node_modules"
     ],
-    "target": "module"
+    "hook": "raw-module",
+    "nextHook": "module"
   },
   {
-    "source": "module",
-    "target": "resolve-as-module"
+    "pluginName": "JoinRequestPartPlugin",
+    "hook": "module",
+    "nextHook": "resolve-as-module"
   },
   {
-    "source": "resolve-as-module",
+    "pluginName": "ConditionalPlugin",
     "test": {
       "directory": false,
       "request": "."
     },
     "message": "single file module",
     "allowAlternatives": true,
-    "target": "undescribed-raw-file"
+    "hook": "resolve-as-module",
+    "nextHook": "undescribed-raw-file"
   },
   {
-    "source": "resolve-as-module",
-    "target": "undescribed-resolve-in-package"
+    "pluginName": "DirectoryExistsPlugin",
+    "hook": "resolve-as-module",
+    "nextHook": "undescribed-resolve-in-package"
   },
   {
-    "source": "undescribed-resolve-in-package",
+    "pluginName": "DescriptionFilePlugin",
     "filenames": [
       "package.json"
     ],
     "pathIsFile": false,
-    "target": "resolve-in-package"
+    "hook": "undescribed-resolve-in-package",
+    "nextHook": "resolve-in-package"
   },
   {
-    "source": "after-undescribed-resolve-in-package",
-    "target": "resolve-in-package"
+    "pluginName": "NextPlugin",
+    "hook": "after-undescribed-resolve-in-package",
+    "nextHook": "resolve-in-package"
   },
   {
-    "source": "resolve-in-package",
-    "target": "relative",
+    "pluginName": "ExportsFieldPlugin",
     "conditionNames": {},
     "fieldName": "exports",
-    "fieldProcessorCache": {}
+    "fieldProcessorCache": {},
+    "hook": "resolve-in-package",
+    "nextHook": "relative"
   },
   {
-    "source": "resolve-in-package",
-    "target": "resolve-in-existing-directory"
+    "pluginName": "NextPlugin",
+    "hook": "resolve-in-package",
+    "nextHook": "resolve-in-existing-directory"
   },
   {
-    "source": "resolve-in-existing-directory",
-    "target": "relative"
+    "pluginName": "JoinRequestPlugin",
+    "hook": "resolve-in-existing-directory",
+    "nextHook": "relative"
   },
   {
-    "source": "relative",
+    "pluginName": "DescriptionFilePlugin",
     "filenames": [
       "package.json"
     ],
     "pathIsFile": true,
-    "target": "described-relative"
+    "hook": "relative",
+    "nextHook": "described-relative"
   },
   {
-    "source": "after-relative",
-    "target": "described-relative"
+    "pluginName": "NextPlugin",
+    "hook": "after-relative",
+    "nextHook": "described-relative"
   },
   {
-    "source": "described-relative",
+    "pluginName": "ConditionalPlugin",
     "test": {
       "directory": false
     },
     "message": null,
     "allowAlternatives": true,
-    "target": "raw-file"
+    "hook": "described-relative",
+    "nextHook": "raw-file"
   },
   {
-    "source": "described-relative",
+    "pluginName": "ConditionalPlugin",
     "test": {
       "fullySpecified": false
     },
     "message": "as directory",
     "allowAlternatives": true,
-    "target": "directory"
+    "hook": "described-relative",
+    "nextHook": "directory"
   },
   {
-    "source": "directory",
-    "target": "undescribed-existing-directory"
+    "pluginName": "DirectoryExistsPlugin",
+    "hook": "directory",
+    "nextHook": "undescribed-existing-directory"
   },
   {
-    "source": "undescribed-existing-directory",
+    "pluginName": "DescriptionFilePlugin",
     "filenames": [
       "package.json"
     ],
     "pathIsFile": false,
-    "target": "existing-directory"
+    "hook": "undescribed-existing-directory",
+    "nextHook": "existing-directory"
   },
   {
-    "source": "undescribed-existing-directory",
+    "pluginName": "UseFilePlugin",
     "filename": "index",
-    "target": "undescribed-raw-file"
+    "hook": "undescribed-existing-directory",
+    "nextHook": "undescribed-raw-file"
   },
   {
-    "source": "existing-directory",
+    "pluginName": "MainFieldPlugin",
     "options": {
       "name": [
         "main"
       ],
       "forceRelative": true
     },
-    "target": "resolve-in-existing-directory"
+    "hook": "existing-directory",
+    "nextHook": "resolve-in-existing-directory"
   },
   {
-    "source": "existing-directory",
+    "pluginName": "UseFilePlugin",
     "filename": "index",
-    "target": "undescribed-raw-file"
+    "hook": "existing-directory",
+    "nextHook": "undescribed-raw-file"
   },
   {
-    "source": "undescribed-raw-file",
+    "pluginName": "DescriptionFilePlugin",
     "filenames": [
       "package.json"
     ],
     "pathIsFile": true,
-    "target": "raw-file"
+    "hook": "undescribed-raw-file",
+    "nextHook": "raw-file"
   },
   {
-    "source": "after-undescribed-raw-file",
-    "target": "raw-file"
+    "pluginName": "NextPlugin",
+    "hook": "after-undescribed-raw-file",
+    "nextHook": "raw-file"
   },
   {
-    "source": "raw-file",
+    "pluginName": "ConditionalPlugin",
     "test": {
       "fullySpecified": true
     },
     "message": null,
     "allowAlternatives": false,
-    "target": "file"
+    "hook": "raw-file",
+    "nextHook": "file"
   },
   {
-    "source": "raw-file",
+    "pluginName": "TryNextPlugin",
     "message": "no extension",
-    "target": "file"
+    "hook": "raw-file",
+    "nextHook": "file"
   },
   {
-    "source": "raw-file",
+    "pluginName": "AppendPlugin",
     "appending": ".json",
-    "target": "file"
+    "hook": "raw-file",
+    "nextHook": "file"
   },
   {
-    "source": "raw-file",
+    "pluginName": "AppendPlugin",
     "appending": ".ts",
-    "target": "file"
+    "hook": "raw-file",
+    "nextHook": "file"
   },
   {
-    "source": "raw-file",
+    "pluginName": "AppendPlugin",
     "appending": ".js",
-    "target": "file"
+    "hook": "raw-file",
+    "nextHook": "file"
   },
   {
-    "source": "file",
-    "target": "final-file"
+    "pluginName": "NextPlugin",
+    "hook": "file",
+    "nextHook": "final-file"
   },
   {
-    "source": "final-file",
-    "target": "existing-file"
+    "pluginName": "FileExistsPlugin",
+    "hook": "final-file",
+    "nextHook": "existing-file"
   },
   {
-    "source": "existing-file",
-    "target": "existing-file"
+    "pluginName": "SymlinkPlugin",
+    "hook": "existing-file",
+    "nextHook": "existing-file"
   },
   {
-    "source": "existing-file",
-    "target": "resolved"
+    "pluginName": "NextPlugin",
+    "hook": "existing-file",
+    "nextHook": "resolved"
   },
   {
-    "source": {
+    "pluginName": "ResultPlugin",
+    "hook": {
       "_args": [
         "request",
         "resolveContext"
       ],
       "name": "resolved",
-      "taps": [],
+      "taps": [
+        {
+          "type": "async",
+          "name": "ResultPlugin"
+        }
+      ],
       "interceptors": []
     }
   }

@@ -1,13 +1,7 @@
 [
   {
     "当前调用的hook为": {
-      "name": "resolve",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "ParsePlugin"
-        }
-      ]
+      "name": "resolve"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
@@ -16,18 +10,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "parsedResolve",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "DescriptionFilePlugin"
-        },
-        {
-          "type": "async",
-          "stage": 10,
-          "name": "NextPlugin"
-        }
-      ]
+      "name": "parsedResolve"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
@@ -43,13 +26,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "describedResolve",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "NextPlugin"
-        }
-      ]
+      "name": "describedResolve"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
@@ -66,13 +43,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "rawResolve",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "NextPlugin"
-        }
-      ]
+      "name": "rawResolve"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
@@ -89,24 +60,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "normalResolve",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "stage": 10,
-          "name": "ConditionalPlugin"
-        },
-        {
-          "type": "async",
-          "stage": 10,
-          "name": "ConditionalPlugin"
-        },
-        {
-          "type": "async",
-          "stage": 10,
-          "name": "JoinRequestPlugin"
-        }
-      ]
+      "name": "normalResolve"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
@@ -123,18 +77,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "relative",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "DescriptionFilePlugin"
-        },
-        {
-          "type": "async",
-          "stage": 10,
-          "name": "NextPlugin"
-        }
-      ]
+      "name": "relative"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
@@ -150,17 +93,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "describedRelative",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "ConditionalPlugin"
-        },
-        {
-          "type": "async",
-          "name": "ConditionalPlugin"
-        }
-      ]
+      "name": "describedRelative"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
@@ -176,29 +109,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "rawFile",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "ConditionalPlugin"
-        },
-        {
-          "type": "async",
-          "name": "TryNextPlugin"
-        },
-        {
-          "type": "async",
-          "name": "AppendPlugin"
-        },
-        {
-          "type": "async",
-          "name": "AppendPlugin"
-        },
-        {
-          "type": "async",
-          "name": "AppendPlugin"
-        }
-      ]
+      "name": "rawFile"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
@@ -214,13 +125,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "file",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "NextPlugin"
-        }
-      ]
+      "name": "file"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
@@ -236,13 +141,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "finalFile",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "FileExistsPlugin"
-        }
-      ]
+      "name": "finalFile"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
@@ -258,13 +157,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "file",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "NextPlugin"
-        }
-      ]
+      "name": "file"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.json",
@@ -280,13 +173,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "finalFile",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "FileExistsPlugin"
-        }
-      ]
+      "name": "finalFile"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.json",
@@ -302,13 +189,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "file",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "NextPlugin"
-        }
-      ]
+      "name": "file"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.ts",
@@ -324,13 +205,7 @@
   },
   {
     "当前调用的hook为": {
-      "name": "finalFile",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "FileExistsPlugin"
-        }
-      ]
+      "name": "finalFile"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
       "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.ts",
@@ -346,20 +221,10 @@
   },
   {
     "当前调用的hook为": {
-      "name": "existingFile",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "SymlinkPlugin"
-        },
-        {
-          "type": "async",
-          "name": "NextPlugin"
-        }
-      ]
+      "name": "file"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
-      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.ts",
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.js",
       "query": "",
       "fragment": "",
       "module": false,
@@ -367,21 +232,15 @@
       "file": false,
       "internal": false,
       "fullySpecified": false,
-      "relativePath": "./file-demo/a.ts"
+      "relativePath": "./file-demo/a.js"
     }
   },
   {
     "当前调用的hook为": {
-      "name": "resolved",
-      "该hook绑定的plugin": [
-        {
-          "type": "async",
-          "name": "ResultPlugin"
-        }
-      ]
+      "name": "finalFile"
     },
     "上个hook结束的结果或传递给当前hook的参数": {
-      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.ts",
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.js",
       "query": "",
       "fragment": "",
       "module": false,
@@ -389,7 +248,39 @@
       "file": false,
       "internal": false,
       "fullySpecified": false,
-      "relativePath": "./file-demo/a.ts"
+      "relativePath": "./file-demo/a.js"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "existingFile"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.js"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "resolved"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.js"
     }
   }
 ]
