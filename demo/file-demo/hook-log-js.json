@@ -1,0 +1,286 @@
+[
+  {
+    "当前调用的hook为": {
+      "name": "resolve"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
+      "request": "./a"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "parsedResolve"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
+      "request": "./a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "describedResolve"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
+      "request": "./a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "rawResolve"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
+      "request": "./a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "normalResolve"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo",
+      "request": "./a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "relative"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "file-demo/a"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "describedRelative"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "rawFile"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "file"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "finalFile"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "file"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.json",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.json"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "finalFile"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.json",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.json"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "file"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.ts",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.ts"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "finalFile"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.ts",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.ts"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "file"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.js"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "finalFile"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.js"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "existingFile"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.js"
+    }
+  },
+  {
+    "当前调用的hook为": {
+      "name": "resolved"
+    },
+    "上个hook结束的结果或传递给当前hook的参数": {
+      "path": "/Users/fujunkui/Desktop/github-project/enhanced-resolve/demo/file-demo/a.js",
+      "query": "",
+      "fragment": "",
+      "module": false,
+      "directory": false,
+      "file": false,
+      "internal": false,
+      "fullySpecified": false,
+      "relativePath": "./file-demo/a.js"
+    }
+  }
+]
